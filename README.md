@@ -69,10 +69,13 @@ pip install -r requirements.txt
 2. **Run the Module:**
    - Start the pipeline with the desired configuration.
    ```bash
-   python main.py --dataset data.csv --output results
+   python main.py --dataset finename --target targetcolumn
    ```
 
 
 Enjoy using the Pattern Recognition Module! If you have any questions or feedback, feel free to open an issue on the GitHub repository.
+
+### Note
+This project is a work in progress, and updates will be coming soon!
 
 

@@ -10,10 +10,11 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--target', type=str, required=True)
+    parser.add_argument('--dataset', type=str, required=True)
     # parser.add_argument('--data_path', type=str, required=True)
     args = parser.parse_args()
 
-    df = pd.read_csv('diabetes.csv')
+    df = pd.read_csv(f'{args.dataset}.csv')
     # df = pd.read_csv(f'{args.data_path}.csv')
     df.rename(columns={ args.target : 'target'}, inplace=True)
 
